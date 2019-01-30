@@ -1,0 +1,27 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  height: 100%;
+}
+
+.all {
+  background-color: #002F39;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 576px;
+  width: 100%;
+}

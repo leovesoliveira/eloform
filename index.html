@@ -5,147 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>EloForm</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
   <div class="all">
-    <header class="header">
-      <h1 class="header__title">Cadastro de Formulário</h1>
-    </header>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Cadastro de Formulário</h1>
+      </header>
 
-    <main class="content">
-      <section class="card">
-        <header class="card__header">
-          <h2 class="card__title">Imóvel</h2>
+      <main class="content">
+        <section class="card">
+          <header class="card__header">
+            <h2 class="card__title">Imóvel</h2>
 
-          <div class="card__type">
-            <label for="form-type-input">Tipo:</label>
+            <div class="card__type">
+              <label for="form-type-input">Tipo:</label>
 
-            <select id="form-type-input">
-              <option>Imobiliário</option>
-              <option>Mobiliário</option>
-              <option>Bol. de Logradouro</option>
-              <option>CNAE</option>
-              <option>Rural</option>
-              <option>Avulso</option>
-              <option>Condomínio</option>
-              <option>Construção Civil</option>
-              <option>Água/Esgoto</option>
-              <option>Setor</option>
-              <option>Vistoria</option>
-            </select>
+              <select id="form-type-input">
+                <option>Imobiliário</option>
+                <option>Mobiliário</option>
+                <option>Bol. de Logradouro</option>
+                <option>CNAE</option>
+                <option>Rural</option>
+                <option>Avulso</option>
+                <option>Condomínio</option>
+                <option>Construção Civil</option>
+                <option>Água/Esgoto</option>
+                <option>Setor</option>
+                <option>Vistoria</option>
+              </select>
+            </div>
+
+            <button class="button">Novo Grupo</button>
+          </header>
+
+          <div class="card__content">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Características da Construção</h3>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Adicionar Campo</a>
+                </div>
+              </header>
+
+              <div class="card__item">
+                <h4 class="card__title">Tipo Construção <small class="card__subtitle">4 Respostas</small></h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <div class="card__item">
+                <h4 class="card__title">Tipo Forro <small class="card__subtitle">3 Respostas</small></h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <div class="card__item">
+                <h4 class="card__title">Tipo Piso <small class="card__subtitle">4 Respostas</small></h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <div class="card__item">
+                <h4 class="card__title">Data da Construção</h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <div class="card__item">
+                <h4 class="card__title">Número de Pavimentos</h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <footer class="card__footer">
+                <a href="#">Excluir este grupo</a>
+              </footer>
+            </article>
+
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">Características – Terreno</h3>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Adicionar Campo</a>
+                </div>
+              </header>
+
+              <div class="card__item">
+                <h4 class="card__title">Situação Terreno <small class="card__subtitle">2 Respostas</small></h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <div class="card__item">
+                <h4 class="card__title">Número de Frentes</h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <div class="card__item">
+                <h4 class="card__title">Área do Terreno</h4>
+
+                <div class="actions">
+                  <a href="#" class="actions__item">Editar Campo</a>
+                  <a href="#" class="actions__item">Excluir Campo</a>
+                </div>
+              </div>
+
+              <footer class="card__footer">
+                <a href="#">Excluir este grupo</a>
+              </footer>
+            </article>
           </div>
 
-          <button class="button">Novo Grupo</button>
-        </header>
-
-        <div class="card__content">
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">Características da Construção</h3>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Adicionar Campo</a>
-              </div>
-            </header>
-
-            <div class="card__item">
-              <h4 class="card__title">Tipo Construção <small class="card__subtitle">4 Respostas</small></h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <div class="card__item">
-              <h4 class="card__title">Tipo Forro <small class="card__subtitle">3 Respostas</small></h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <div class="card__item">
-              <h4 class="card__title">Tipo Piso <small class="card__subtitle">4 Respostas</small></h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <div class="card__item">
-              <h4 class="card__title">Data da Construção</h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <div class="card__item">
-              <h4 class="card__title">Número de Pavimentos</h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <footer class="card__footer">
-              <a href="#">Excluir este grupo</a>
-            </footer>
-          </article>
-
-          <article class="card">
-            <header class="card__header">
-              <h3 class="card__title">Características – Terreno</h3>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Adicionar Campo</a>
-              </div>
-            </header>
-
-            <div class="card__item">
-              <h4 class="card__title">Situação Terreno <small class="card__subtitle">2 Respostas</small></h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <div class="card__item">
-              <h4 class="card__title">Número de Frentes</h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <div class="card__item">
-              <h4 class="card__title">Área do Terreno</h4>
-
-              <div class="actions">
-                <a href="#" class="actions__item">Editar Campo</a>
-                <a href="#" class="actions__item">Excluir Campo</a>
-              </div>
-            </div>
-
-            <footer class="card__footer">
-              <a href="#">Excluir este grupo</a>
-            </footer>
-          </article>
-        </div>
-
-        <footer class="card__footer">
-          <a href="#">Excluir este formulário</a>
-        </footer>
-      </section>
-    </main>
+          <footer class="card__footer">
+            <a href="#">Excluir este formulário</a>
+          </footer>
+        </section>
+      </main>
+    </div>
   </div>
 </body>
 </html>
