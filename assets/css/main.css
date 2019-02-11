@@ -21,10 +21,16 @@ body {
   padding-bottom: 3.125rem;
 }
 
+
+/*##### HELPERS #####*/
+
 .container {
   margin: 0 auto;
   max-width: 576px;
   width: 100%;
+}
+.flex {
+  display: flex;
 }
 
 /*##### HEADER #####*/
@@ -69,6 +75,8 @@ body {
 .card__title {
   color: #002F39;
   font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 100%;
   margin: 0;
 }
 .card__title--margin-bottom {
@@ -193,3 +201,17 @@ body {
 }
 .actions__item *:first-child { margin-left: 0; }
 .actions__item *:last-child { margin-right: 0; }
+
+/*##### INPUT #####*/
+
+.input {
+  background-color: #D7EBEF;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  transition: all 0.5ms;
+  outline: none;
+}
+.input:read-only {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
